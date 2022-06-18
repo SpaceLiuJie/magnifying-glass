@@ -40,7 +40,7 @@ export default {
         this.shopList = data;
       });
     },
-    replaceLink(e, shop) {
+    replaceLink(e,shop) {
       this.$router.replace(`/detail/${shop.Id}/${shop.type_one}`);
     },
     // 点击添加购物车
@@ -50,7 +50,7 @@ export default {
       // let username = this.$store.state.user.username;
       // good
       let { token, username } = this.$store.state.user;
-
+        console.log('添加成功');
       this.permission(token).then((res) => {
         if (res) {
           let data = {

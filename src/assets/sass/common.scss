@@ -1,0 +1,20 @@
+@import './var.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-width: 100%;
+    min-height: 1px;
+    /* body #app */
+    #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: $-color-nav-default;
+    }
+}
